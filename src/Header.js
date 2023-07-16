@@ -16,6 +16,7 @@ function Header() {
 
   return (
     <div className="header">
+      <h1>this is header</h1>
       <Link to="/">
         <img
           className="header__logo"
