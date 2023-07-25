@@ -19,3 +19,15 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .home__image {
+    margin-bottom: -50px;
+  }
+
+  .home__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -55,7 +55,6 @@
   margin-top: 10px;
   border-color: #a88734 #9c7e31 #846a29;
 }
-
 .login__registerButton {
   border-radius: 2px;
   width: 100%;
@@ -64,3 +63,17 @@
   margin-top: 10px;
   border-color: darkgray;
 }
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .login__container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .login__signInButton,
+  .login__registerButton {
+    width: 100%;
+  }
+}
+

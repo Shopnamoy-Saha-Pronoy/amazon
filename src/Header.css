@@ -4,58 +4,116 @@
     align-items: center;
     background-color: #131921;
     position: sticky;
+    top: 0;
     z-index: 100;
-}
-.header__logo{
+  }
+  
+  .header__logo {
     width: 100px;
-    object-fit:contain;
+    object-fit: contain;
     margin: 0 20px;
     margin-top: 18px;
-}
-.header__search{
+  }
+  
+  .header__search {
     display: flex;
     flex: 1;
     align-items: center;
     border-radius: 24px;
-
-}
-.header__searchInput{
-    height: 12px;
-    padding: 10px;
+  }
+  
+  .header__searchInput {
+    height: 30px;
+    padding: 5px 10px;
     border: none;
     width: 100%;
-}
-.header__searchIcon{
-    padding:5px;
-    height:22px !important;
+    font-size: 14px;
+  }
+  
+  .header__searchIcon {
+    padding: 5px;
+    height: 30px !important;
     background-color: #cd9042;
-}
-
-.header__optionLineOne{
-font-size: 10px;
-}
-.header__optionBasket{
+  }
+  
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  
+  .header__optionBasket {
     display: flex;
     align-items: center;
     color: white;
-}
-.header__basketCount{
+  }
+  
+  .header__basketCount {
     margin-left: 10px;
     margin-right: 10px;
-}
-
-.header__optionLineTwo{
+  }
+  
+  .header__optionLineTwo {
     font-size: 14px;
     font-weight: 600;
-    }
-.header__nav{
+  }
+  
+  .header__nav {
     display: flex;
     justify-content: space-evenly;
-}
-.header__option{
+  }
+  
+  .header__option {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-right: 10px;
     color: white;
-}
+  }
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 768px) {
+    .header {
+      height: auto;
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .header__logo {
+      width: 80px;
+      margin-top: 8px;
+    }
+  
+    .header__search {
+      margin-top: 10px;
+    }
+  
+    .header__searchInput {
+      font-size: 14px;
+    }
+  
+    .header__optionLineOne {
+      font-size: 12px;
+    }
+  
+    .header__basketCount {
+      margin-left: 5px;
+      margin-right: 5px;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 999;
+    }
+  
+    .header__optionLineTwo {
+      font-size: 16px;
+    }
+  
+    .header__optionBasket {
+      margin-left: 5px;
+      margin-right: 5px;
+      position: fixed;
+      top: 10px;
+      right: 25px;
+      z-index: 900;
+    }
+  }
+  

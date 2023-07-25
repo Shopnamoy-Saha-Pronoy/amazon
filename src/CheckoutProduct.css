@@ -20,8 +20,6 @@
   object-fit: contain;
   width: 180px;
   height: 180px;
-  
-  
 }
 
 .checkoutProduct__rating {
@@ -31,4 +29,25 @@
 .checkoutProduct__title {
   font-size: 17px;
   font-weight: 800;
+}
+
+@media only screen and (max-width: 768px) {
+  .checkoutProduct {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .checkoutProduct__info {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .checkoutProduct__info > button {
+    width: 100%;
+  }
+
+  .checkoutProduct__image {
+    width: 150px;
+    height: 150px;
+  }
 }
