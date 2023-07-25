@@ -1,27 +1,46 @@
-.payment{
-    background-color: white; 
-
-}
-.payment__container >h1{
+.payment {
+    background-color: white;
+  }
+  
+  .payment__container > h1 {
     text-align: center;
     padding: 10px;
     font-weight: 400;
-    background-color: rgb(234,237,237);
+    background-color: rgb(234, 237, 237);
     border-bottom: 1px solid lightgray;
-}
-.payment__container >h1 a{
+  }
+  
+  .payment__container > h1 a {
     text-decoration: none;
-}
-
-.payment__section{
-    display: flex;
-    padding:20px;
-    margin:0 20px;
-    border-bottom:1px solid lightgrey;
-}
-.payment__title{
-flex:0.2;
-}
-.payment__address, .payment__items, .payment__details{
-    flex:0.8;
-}
+  }
+  
+  /* Responsive adjustments */
+  @media only screen and (max-width: 768px) {
+    .payment__section {
+      flex-direction: column;
+      padding: 10px;
+      margin: 0 10px;
+    }
+  
+    .payment__title {
+      flex: 1;
+      margin-bottom: 10px;
+    }
+  
+    .payment__address,
+    .payment__items,
+    .payment__details {
+      flex: 1;
+    }
+  
+    .payment__address,
+    .payment__items,
+    .payment__details {
+      border-bottom: none;
+    }
+  
+    .payment__section:not(:last-child) {
+      border-bottom: 1px solid lightgrey;
+    }
+  }
+  
