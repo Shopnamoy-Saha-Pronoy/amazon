@@ -68,6 +68,14 @@
     margin-right: 10px;
     color: white;
   }
+  .nav{
+margin-right: 5px;
+margin-left: 5px;
+
+  }
+  .nav__level{
+    color: white;
+  }
   
   /* Responsive adjustments */
   @media only screen and (max-width: 768px) {

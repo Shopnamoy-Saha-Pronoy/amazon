@@ -5,6 +5,8 @@ import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import nav from "./Image/nav side bar.png";
+
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
@@ -16,6 +18,8 @@ function Header() {
 
   return (
     <div className="header">
+      <img src={nav} className="nav"/>
+      <span className="nav__level">All</span>
      
       <Link to="/">
         <img
@@ -60,8 +64,14 @@ function Header() {
           </div>
         </Link>
       </div>
+      <div>
+
+
+
+      </div>
     </div>
-  );
+  )
+     
 }
 
 export default Header;
